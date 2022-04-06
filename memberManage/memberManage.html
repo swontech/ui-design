@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subpage</title>
+    <link href="memberManage.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="sidebar">
+        
+        <div class="logo"><img src="../img/sub-logo.svg" alt="로고"></div>
+
+        <ul class="menu-wrap">
+
+            <li class="menu"><a href=""><i class="fa-solid fa-house-chimney"></i> &nbsp; menu</a>
+                
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+        </ul>
+
+    </div>
+    
+    <!-----------------sidebar--------------------->
+
+
+
+    <div class="wrap">
+        <div class="inner">
+
+            <div class="top">
+
+                <h1>회원관리</h1><p class="subTitle">이곳에서 회원정보를 관리할 수 있습니다. </p>
+
+                <div class="user-wrap">
+            
+                    <p class="userName">username-123</p>
+                    <div class="userProfile"><img src="../img/userProfile.svg"></div>
+                </div>
+
+            </div><!--top-->
+
+
+            <div class="searchBox">
+                
+                <div class="dateSelectWrap">
+                        
+                    <input class="dateSelect" type="date" data-placeholder="등록일자" required aria-required="true"><p>~</p>
+                    <input class="dateSelect" type="date"  data-placeholder="등록일자" required aria-required="true">
+
+                </div>
+
+
+                <input class="search" type="search" maxlength="10" placeholder="회원명"> &nbsp;&nbsp;
+                <input class="search" type="search" maxlength="10" placeholder="부서명">
+                
+                <select type="select">
+                    <option>회원구분</option>
+                    <option>옵션1</option>
+                    <option>옵션2</option>
+                    <option>옵션3</option>
+                    <option>옵션4</option>
+                </select>
+
+                <div class="submitBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+
+            <div class="iconWrap">
+                <a href="#" onclick="window.open('../memberRegistration/memberRegistration.html', '_blank', 'width=600 height=700')">
+                <div class="icons registIcon"><p>등록</p><img class="svg" src="../img/registIcon.svg">
+                </div></a>
+                <div class="icons editIcon"><p>수정</p><img class="svg" src="../img/editIcon.svg"></div>
+                <div class="icons deleteIcon"><p>삭제</p><img class="svg" src="../img/deleteIcon.svg"></div>
+                <div class="icons adminPlus"><p>운영자등록</p><img class="svg" src="../img/adminPlus.svg"></div>
+                <div class="icons adminDelete"><p>운영자삭제</p><img class="svg" src="../img/adminDelete.svg"></div>
+                <div class="icons downloadIcon"><p>다운로드</p><img class="svg" src="../img/downloadIcon.svg"></div>
+                <div class="icons uploadIcon"><p>업로드</p><img class="svg" src="../img/uploadIcon.svg"></div>
+             
+            </div>
+
+            <table>
+                <th>선택</th>
+                <th>번호</th>
+                <th>이름</th>
+                <th>회원구분</th>
+                <th>연락처</th>
+                <th>주소</th>
+                <th>부서명</th>
+                
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>1</td>
+                        <td>A회원</td>
+                        <td>대표자</td>
+                        <td>010-0000-0000</td>
+                        <td>00시 00구 00아파트</td>
+                        <td>청년부</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>2</td>
+                        <td>B회원</td>
+                        <td>일반</td>
+                        <td>010-0000-0000</td>
+                        <td>00시 00구 00아파트</td>
+                        <td>청년부</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>3</td>
+                        <td>C회원</td>
+                        <td>일반</td>
+                        <td>010-0000-0000</td>
+                        <td>00시 00구 00아파트</td>
+                        <td>청년부</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>4</td>
+                        <td>D회원</td>
+                        <td>일반</td>
+                        <td>010-0000-0000</td>
+                        <td>00시 00구 00아파트</td>
+                        <td>청년부</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>5</td>
+                        <td>E회원</td>
+                        <td>일반</td>
+                        <td>010-0000-0000</td>
+                        <td>00시 00구 00아파트</td>
+                        <td>청년부</td>
+                    </tr>
+                    
+
+            </table>
+
+
+            <div class="pagination">
+                <div><i class="fa-solid fa-angle-left"></i></div>
+                <div class="pgNumber"><a href="">1</a></div>
+                <div class="pgNumber"><a href="">2</a></div>
+                <div class="pgNumber"><a href="">3</a></div>
+                <div class="pgNumber"><a href="">4</a></div>
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <div class="pgNumber"><a href="">10</a></div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+
+
+
+
+
+
+
+            
+        </div><!--inner-->
+    </div><!--wrap-->
+
+
+</body>
+</html>
