@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행사현황</title>
+    <link href="event.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    
+    <div class="wrap"> <!--전체 컨텐츠를 포괄하는 박스입니다-->
+
+        <div class="inner"><!--랩의 내부 사이즈를 규정하는 박스입니다.-->
+
+            <div class="top"><!--페이지 상단 타이틀과 유저프로필을 포괄하는 박스입니다. -->
+
+                <h1>행사현황</h1><p class="subTitle">이곳에서 행사들을 관리하고 현황을 볼 수 있습니다.</p>
+
+                <div class="user-wrap">
+            
+                    <p class="userName">username-123</p>
+                    <div class="userProfile"><img src="../img/userProfile.svg"></div>
+                </div>
+
+            </div><!--top-->
+
+
+            <div class="searchBox"><!--검색창을 포괄하는 박스입니다.-->
+                <input class="search" type="search" maxlength="10" placeholder="행사명"> &nbsp;&nbsp;
+                <input class="search" type="search" maxlength="10" placeholder="운영자">
+                
+                <select type="select">
+                    <option>진행상태</option>
+                    <option>옵션1</option>
+                    <option>옵션2</option>
+                    <option>옵션3</option>
+                    <option>옵션4</option>
+                </select>
+
+                <div class="submitBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+  
+            </div>
+
+
+            <div class="iconWrap"><!--검색창 밑 아이콘을 포괄하는 박스입니다.-->
+                <a href="#" onclick="window.open('../groupRegistration/registration.html', '_blank', 'width=600 height=700')">
+                <div class="icons registIcon"><p>등록</p><img class="svg" src="../img/registIcon.svg">
+                </div></a>
+                <div class="icons editIcon"><p>수정</p><img class="svg" src="../img/editIcon.svg"></div>
+                <div class="icons deleteIcon"><p>삭제</p><img class="svg" src="../img/deleteIcon.svg"></div>
+            </div>
+
+            <table>
+                <th>선택</th>
+                <th>번호</th>
+                <th>운영자</th>
+                <th>행사명</th>
+                <th>행사기간</th>
+                <th>예약자 수</th>
+                <th>참석자</th>
+                <th>진행상태</th>
+                
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>1</td>
+                        <td>운영자A</td>
+                        <td>행사A</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>마감</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>2</td>
+                        <td>운영자B</td>
+                        <td>행사B</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>마감</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>3</td>
+                        <td>운영자C</td>
+                        <td>행사C</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>마감</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>4</td>
+                        <td>운영자D</td>
+                        <td>행사D</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>마감</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>5</td>
+                        <td>운영자E</td>
+                        <td>행사E</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>마감</td>
+                    </tr>
+                    
+
+            </table>
+
+
+            <div class="pagination"><!--페이지 우측하단 페이지네이션을 포괄하는 박스입니다.-->
+                <div><i class="fa-solid fa-angle-left"></i></div>
+                <div class="pgNumber"><a href="">1</a></div>
+                <div class="pgNumber"><a href="">2</a></div>
+                <div class="pgNumber"><a href="">3</a></div>
+                <div class="pgNumber"><a href="">4</a></div>
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <div class="pgNumber"><a href="">10</a></div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+
+
+
+
+
+
+
+            
+        </div><!--inner-->
+    </div><!--wrap-->
+
+
+</body>
+</html>
