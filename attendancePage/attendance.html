@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>출석현황</title>
+    <link href="attendance.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="sidebar">
+        
+        <div class="logo"><img src="../img/sub-logo.svg" alt="로고"></div>
+
+        <ul class="menu-wrap">
+
+            <li class="menu"><a href=""><i class="fa-solid fa-house-chimney"></i> &nbsp; menu</a>
+                
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp; menu</a>
+                <ul class="submenu">
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                    <li><a href="">submenu</a></li>
+                </ul>
+            
+            </li>
+        </ul>
+
+    </div>
+    
+    <!-----------------sidebar--------------------->
+
+
+
+    <div class="wrap">
+        <div class="inner">
+
+            <div class="top">
+
+                <h1>출석현황</h1><p class="subTitle">이곳에서 출석현황을 확인할 수 있습니다. </p>
+
+                <div class="user-wrap">
+            
+                    <p class="userName">username-123</p>
+                    <div class="userProfile"><img src="../img/userProfile.svg"></div>
+                </div>
+
+            </div><!--top-->
+
+
+            <div class="searchBox"><!--검색창 전체를 감싸는 박스입니다-->
+                
+            
+                <!--출입일시 날짜 선택 폼입니다-->
+                <input class="dateSelect" type="date" data-placeholder="출입일시" required aria-required="true"><span>~</span>
+
+                <!--출입일시 날짜 선택 폼입니다-->
+                <input class="dateSelect" type="date"  data-placeholder="출입일시" required aria-required="true">
+
+                <!--행사명을 입력하는 폼입니다-->
+                <input class="search" type="search" maxlength="10" placeholder="행사명"> &nbsp;&nbsp;
+                <!--회원명을 입력하는 폼입니다-->
+                <input class="search" type="search" maxlength="10" placeholder="회원명">
+                
+                <!--돋보기 아이콘의 검색 버튼입니다-->
+                <div class="submitBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+            
+            <table> <!--표입니다-->
+                <th>번호</th>
+                <th>행사명</th>
+                <th>이름</th>
+                <th>핸드폰 번호</th>
+                <th>출입일시</th>
+                
+                    <tr>
+                        <td>1</td>
+                        <td>A행사</td>
+                        <td>대표자</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022.02.01</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>2</td>
+                        <td>B행사</td>
+                        <td>대표자</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022.02.01</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>C행사</td>
+                        <td>대표자</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022.02.01</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>4</td>
+                        <td>D행사</td>
+                        <td>대표자</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022.02.01</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>5</td>
+                        <td>E행사</td>
+                        <td>대표자</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022.02.01</td>
+                    </tr>
+                   
+            </table>
+
+
+            <div class="pagination"><!--페이지 우측하단 페이지네이션입니다-->
+                <div><i class="fa-solid fa-angle-left"></i></div>
+                <div class="pgNumber"><a href="">1</a></div>
+                <div class="pgNumber"><a href="">2</a></div>
+                <div class="pgNumber"><a href="">3</a></div>
+                <div class="pgNumber"><a href="">4</a></div>
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <div class="pgNumber"><a href="">10</a></div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+
+        </div><!--inner-->
+    </div><!--wrap-->
+
+</body>
+</html>
