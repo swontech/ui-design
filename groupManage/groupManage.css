@@ -144,9 +144,15 @@ h1{
 
 .searchBox{
   margin-top: 50px;
-  position: relative;
-  width: 150px;
+  display: flex;
 }
+.submitBtn:hover{
+  background-color:  rgb(25, 128, 111);
+  cursor: pointer;
+}
+
+
+
 .search{
   border-top: none;
   border-left: none;
@@ -165,11 +171,17 @@ h1{
   color: #ababab;
 }
 
-.searchBtn{
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 18px;
+
+.submitBtn{
+  display: inline-block;
+  background-color: rgb(50, 190, 166);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
 
 }
 

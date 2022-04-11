@@ -154,32 +154,30 @@ h1{
   border-right: none;
   border-bottom: #333 1.5px solid;
   outline: none;
-  width: 150px;
+  width: 10%;
   height: 30px;
   font-size: 15px;
- 
+  margin-right: 20px;
+
 }
 
 select{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: #333 1.5px solid;
-    outline: none;
-    width: 10%;
-    height: 30px;
-    font-size: 18px;
-    font-weight: 200;
-    text-align: center;
-    margin: 0 10px;
-    color: #ababab;
-    
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #333 1.5px solid;
+  outline: none;
+  width: 10%;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: #ababab;
+  
   }
 
 ::placeholder{
   text-align: center;
-  font-size: 18px;
-  font-weight: 200;
+  font-size: 12px;
   color: #ababab;
 }
 
