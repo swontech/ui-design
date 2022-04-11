@@ -15,12 +15,85 @@ body {
   -ms-user-select:none;
   user-select:none
 }
+.sidebar {
+  background-color: rgb(50, 190, 166);
+  position: absolute;
+  left: 0px;
+  width: 10%;
+  height: 100%;
+  z-index: 9;
+  color: white;
+  font-weight: 300;
+
+}
+
+.logo {
+  width: 40%;
+  z-index: 9;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.menu-wrap{
+
+  margin-top: 70%;
+}
+
+
+.menu{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 60px;
+    font-size: 22px;
+ 
+    
+}
+
+.menu>a{
+color:white;
+display: inline-block;
+border-radius: 15px;
+width: 100%;
+}
+
+.submenu{
+font-size: 0.8em;
+border-left: 1px solid white;
+display: none;
+width: 80%;
+margin: 0 auto;
+text-align: right;
+}
+
+.submenu>li{
+line-height: 1.4;
+}
+.submenu>li>a{
+color: white;
+}
+
+.menu:hover .menu>a{
+background-color: rgb(117, 212, 196);
+}
+
+.menu:hover .submenu{ 
+display: block;
+background-color: rgb(50, 190, 166);
+
+}
+
+.submenu>li:hover a{
+color: rgb(25, 128, 111);
+}
 
 
 .wrap {
   width: 90%;
   height: 100vh;
   margin: 0 auto;
+  float: right;
 }
 
 .inner{
@@ -155,6 +228,12 @@ select{
   position: absolute;
   top: 60%;
   left: 30%;
+  
+}
+.costIcon>p{
+
+  margin-left: -9px;
+  font-size: 11px;
   
 }
 

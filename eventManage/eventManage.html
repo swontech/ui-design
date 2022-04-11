@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equivs="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행사등록/수정</title>
+    <link href="eventManage.css" rel="stylesheet" >
+</head>
+
+<div class="wrap"> <!-- 페이지 전체를 감싸는 박스입니다-->
+
+    <div class="inner"> <!-- 페이지 내부 컨텐츠 전체를 감싸는 박스입니다-->
+
+        <h1>안녕하세요.</h1> <!-- 메인 타이틀 입니다-->
+        <p class="subTitle">이곳에서 행사를 새로 등록하거나 수정할 수 있습니다.</p><!-- 서브 타이틀 입니다-->
+
+        <form><!--입력 양식 폼입니다-->
+
+            <label>행사명</label><br>
+            <input type="text" class="eventName" maxlength="20" ><br>
+
+            <label>행사일자</label><br>
+
+            <div class="dateSelectWrap"><!--날짜 선택 입력칸을 감싸는 박스입니다.-->
+
+                <input class="dateSelect" type="date" data-placeholder="등록일자" required aria-required="true"><p>~</p>
+
+                <input class="dateSelect" type="date" data-placeholder="등록일자" required aria-required="true"><br>
+
+            </div>
+            
+            <div class="layer3Wrap"><!--행사장소/운영자 전체를 포괄하는 박스입니다-->
+
+                <div class="eventLocation"><!--행사장소 레이블과 인풋을 포괄하는 박스입니다-->
+
+                    <label>행사장소</label><br>
+                    <input type="text" maxlength="20"><br>
+
+                </div> 
+
+                <div class="eventManager"><!--운영자 레이블과 인풋을 포괄하는 박스입니다-->
+
+                    <label>운영자</label><br>
+                    <input type="text" maxlength="7"><br>
+
+                </div>
+
+             </div>
+                
+            
+
+            <lable>행사내용</lable><br><!--텍스트에어리어입니다-->
+            <textarea style="resize: none;" placeholder="행사내용을 입력해주세요"></textarea><br>
+           
+            <div class="layer5Wrap"><!--참석여부박스와 종료날짜 전체를 포괄하는 박스입니다-->
+
+                <div class="attend">
+
+                    <label>참석여부</label><br>
+                    <input type="text"><br>
+
+                </div>
+
+                <div class="eventEnd">
+
+                    <label>종료</label><br>
+                    <input class="dateSelect" type="date" data-placeholder="등록일자" required aria-required="true">
+
+                 </div>
+
+
+             </div>
+
+        </form>
+
+        <div class="btnWrap"><!--버튼을 감싸는 박스입니다-->
+            
+            <div class="submitBtn">저장</div><div class ="cancelBtn" onClick="window.close()">취소 </div>
+
+         </div>
+
+
+
+    </div><!---------inner--------->
+
+</div><!---------wrap--------->
+      
+</body>
+</html>
