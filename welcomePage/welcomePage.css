@@ -59,17 +59,18 @@ body {
 }
 
 .submenu{
-  font-size: 18px;
+  font-size: 16px;
   border-left: 1px solid white;
   display: none;
-  width: 80%;
+  width: 73%;
   margin: 0 auto;
   text-align: center;
-  margin-left: 30px;
+  margin-left: 20%;
 }
 
 .submenu>li{
   line-height: 1.4;
+  
 }
 .submenu>li>a{
   color: white;
