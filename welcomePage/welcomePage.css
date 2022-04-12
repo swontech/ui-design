@@ -108,12 +108,9 @@ body {
 }
 
 .titleWrap{
-    width: 700px;
+    width: 750px;
     margin: 15% auto 0 auto;
-    border: 3px solid white;
-    border-top: none;
-    border-bottom: none;
-    
+   
 }
 
 
@@ -122,6 +119,11 @@ h1{
   font-weight: 400;
   color: white;
   text-align: center;
+  margin: 20px 0 10px 0;
+  border: 3px solid white;
+  border-top: none;
+  border-bottom: none;
+  
 
 }
 
@@ -131,7 +133,7 @@ h1{
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
   letter-spacing: 2em;
-  margin-bottom: 10px;
+
 
 }
 
@@ -141,6 +143,5 @@ h1{
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  margin-top: 10px;
 }
 
