@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부서관리</title>
+    <link href="departmentBudget.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+
+    <div class="wrap"> <!--전체 컨텐츠를 포괄하는 박스입니다-->
+
+        <div class="inner"><!--랩의 내부 사이즈를 규정하는 박스입니다.-->
+
+            <div class="top"><!--페이지 상단 타이틀과 유저프로필을 포괄하는 박스입니다. -->
+
+                <h1>부서관리</h1><p class="subTitle">이곳에서 부서를 관리하고 예산현황을 볼 수 있습니다.</p>
+
+                <div class="user-wrap">
+            
+                    <p class="userName">username-123</p>
+                    <div class="userProfile"><img src="../img/userProfile.svg"></div>
+                </div>
+
+            </div><!--top-->
+
+
+            <div class="searchBox"><!--검색창을 포괄하는 박스입니다.-->
+                <input class="search" type="search" maxlength="10" placeholder="부서명">
+                <input class="search" type="search" maxlength="10" placeholder="팀장">
+                
+            
+                <div class="submitBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+  
+            </div>
+
+
+            <div class="iconWrap"><!--검색창 밑 아이콘을 포괄하는 박스입니다.-->
+                <a href="#" onclick="window.open('', '_blank', 'width=500 height=600,left=500px ,top=100px')">
+               
+                <div class="icons costIcon"><p>예산관리</p><img class="svg" src="../img/costIcon.svg"></div></a>
+            </div>
+
+            
+
+            <table>
+
+
+                <div class="tableInfo"><!--예산액을 표시하는 박스입니다.-->
+
+                    <p class="budgetInfo">뉴웨이브공동체 예산액 : <span>1300만원</span></p>
+                    <p class="priceInfo">금액단위 : 만원</p>
+
+                </div>
+
+
+                <th rowspan="2">선택</th>
+                <th rowspan="2">번호</th>
+                <th rowspan="2">부서명</th>
+                <th rowspan="2">팀장</th>
+                <th rowspan="2">총무</th>
+                <th colspan="6">사역명</th>
+                <th rowspan="2">예산액</th>
+                <th rowspan="2">예산비율(%)</th>
+                <th rowspan="2">예산잔액</th>
+                <th rowspan="2">인원수</th>
+                <th rowspan="2">비고</th>
+                
+                    <tr>
+                        
+                        <td>사역명</td>
+                        <td>책임자</td>
+                        <td>사역명</td>
+                        <td>책임자</td>
+                        <td>사역명</td>
+                        <td>책임자</td>
+                       
+                    </tr>
+                    
+                
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>1</td>
+                        <td rowspan="10">뉴웨이브공동체</td>
+                        <td rowspan="10">팀장A</td>
+                        <td rowspan="10">총무A</td>
+                        <td rowspan="6">총괄운영비</td>
+                        <td rowspan="6">책임자A</td>
+                        <td rowspan="3">운영비</td>
+                        <td rowspan="2">책임자B</td>
+                        <td>차량유지비</td>
+                        <td>책임자C</td>
+                        <td>50</td>
+                        <td>4%</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>2</td>
+                        <td>물품구입비</td>
+                        <td>책임자C</td>
+                        <td>50</td>
+                        <td>4%</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>3</td>
+                        <td colspan="3" class="filled">운영비 소계</td>
+                        <td class="filled">150</td>
+                        <td class="filled">11%</td>
+                        <td class="filled">150</td>
+                        <td class="filled">90</td>
+                        <td></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>4</td>
+                        <td rowspan="3">경조사비</td>
+                        <td rowspan="2">책임자B</td>
+                        <td>경조사비</td>
+                        <td>책임자C</td>
+                        <td>50</td>
+                        <td>4%</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>5</td>
+                        <td>구제사역</td>
+                        <td>책임자C</td>
+                        <td>50</td>
+                        <td>4%</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td></td>
+                        
+                    </tr>
+                  
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>6</td>
+                        <td colspan="3" class="filled">경조사비 소계</td>
+                        <td class="filled">100</td>
+                        <td class="filled">7%</td>
+                        <td class="filled">100</td>
+                        <td class="filled">60</td>
+                        <td></td>
+                        
+                    </tr>
+                  
+                    
+               
+
+            </table>
+
+
+        </div><!--inner-->
+    </div><!--wrap-->
+
+
+</body>
+</html>

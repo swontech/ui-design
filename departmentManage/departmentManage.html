@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>행사현황</title>
-    <link href="event.css" rel="stylesheet">
+    <title>부서관리</title>
+    <link href="departmentManage.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
 
 </head>
@@ -27,7 +27,7 @@
                 <ul class="submenu">
                     <li><a href="../groupManage/groupManage.html">단체관리</a></li>
                     <li><a href="../memberManage/memberManage.html">회원관리</a></li>
-                    <li><a href="../departmentManage/departmentManage.html">부서관리</a></li>
+                    <li><a href="">부서관리</a></li>
                     <li><a href="">결제관리</a></li>
                 </ul>
             
@@ -62,7 +62,7 @@
 
             <div class="top"><!--페이지 상단 타이틀과 유저프로필을 포괄하는 박스입니다. -->
 
-                <h1>행사현황</h1><p class="subTitle">이곳에서 행사들을 관리하고 현황을 볼 수 있습니다.</p>
+                <h1>부서관리</h1><p class="subTitle">이곳에서 부서를 관리하고 예산현황을 볼 수 있습니다.</p>
 
                 <div class="user-wrap">
             
@@ -74,100 +74,136 @@
 
 
             <div class="searchBox"><!--검색창을 포괄하는 박스입니다.-->
-                <input class="search" type="search" maxlength="10" placeholder="행사명">
-                <input class="search" type="search" maxlength="10" placeholder="운영자">
+                <input class="search" type="search" maxlength="10" placeholder="부서명">
+                <input class="search" type="search" maxlength="10" placeholder="팀장">
                 
-                <select type="select">
-                    <option>진행상태</option>
-                    <option>옵션1</option>
-                    <option>옵션2</option>
-                    <option>옵션3</option>
-                    <option>옵션4</option>
-                </select>
-
+            
                 <div class="submitBtn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-  
+
+                
             </div>
 
 
+
             <div class="iconWrap"><!--검색창 밑 아이콘을 포괄하는 박스입니다.-->
-                <a href="#" onclick="window.open('../eventManage/eventManage.html', '_blank', 'width=500 height=600,left=500px ,top=100px')">
-                <div class="icons registIcon"><p>등록</p><img class="svg" src="../img/registIcon.svg">
-                </div></a>
-                <div class="icons editIcon"><p>수정</p><img class="svg" src="../img/editIcon.svg"></div>
-                <div class="icons deleteIcon"><p>삭제</p><img class="svg" src="../img/deleteIcon.svg"></div>
-                <div class="icons costIcon"><p>비용등록</p><img class="svg" src="../img/costIcon.svg"></div>
+                <a href="#" onclick="window.open('../departmentBudget/departmentBudget.html', '_blank', ',left=500px ,top=100px')">
+               
+                <div class="icons costIcon"><p>예산등록</p><img class="svg" src="../img/costIcon.svg"></div></a>
+
             </div>
 
             
 
             <table>
+
+
+                <div class="tableInfo"><!--예산액을 표시하는 박스입니다.-->
+
+                    <p class="budgetInfo">2022년 예산액 : <span>1300만원</span></p>
+                    <p class="priceInfo">금액단위 : 만원</p>
+
+                </div>
+
+
                 <th>선택</th>
                 <th>번호</th>
-                <th>운영자</th>
-                <th>행사명</th>
-                <th>행사기간</th>
-                <th>예약자 수</th>
-                <th>참석자</th>
-                <th>진행상태</th>
+                <th>부서명</th>
+                <th>팀장</th>
+                <th>총무</th>
+                <th>사역명</th>
+                <th>예산액</th>
+                <th>예산비율(%)</th>
+                <th>예산잔액</th>
+                <th>인원수</th>
+                <th>비고</th>
                 
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>1</td>
-                        <td>운영자A</td>
-                        <td>행사A</td>
-                        <td>2022.01.01 ~ 2022. 02.01</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>마감</td>
+                        <td rowspan="6">뉴웨이브공동체</td>
+                        <td rowspan="6">팀장A</td>
+                        <td rowspan="6">총무A</td>
+                        <td>총괄운영비</td>
+                        <td>100</td>
+                        <td>8%</td>
+                        <td>20</td>
+                        <td>80</td>
+                        <td></td>
                     </tr>
                     
+               
+                
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>2</td>
-                        <td>운영자B</td>
-                        <td>행사B</td>
-                        <td>2022.01.01 ~ 2022. 02.01</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>마감</td>
+                        <td>예배비</td>
+                        <td>100</td>
+                        <td>8%</td>
+                        <td>20</td>
+                        <td>80</td>
+                        <td></td>
                     </tr>
                     
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>3</td>
-                        <td>운영자C</td>
-                        <td>행사C</td>
-                        <td>2022.01.01 ~ 2022. 02.01</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>마감</td>
+                        <td>수련회비</td>
+                        <td>100</td>
+                        <td>8%</td>
+                        <td>20</td>
+                        <td>80</td>
+                        <td></td>
                     </tr>
                     
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>4</td>
-                        <td>운영자D</td>
-                        <td>행사D</td>
-                        <td>2022.01.01 ~ 2022. 02.01</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>마감</td>
+                        <td>선교비</td>
+                        <td>100</td>
+                        <td>8%</td>
+                        <td>20</td>
+                        <td>80</td>
+                        <td></td>
                     </tr>
                     
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>5</td>
-                        <td>운영자E</td>
-                        <td>행사E</td>
-                        <td>2022.01.01 ~ 2022. 02.01</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>마감</td>
+                        <td>청년1부</td>
+                        <td>100</td>
+                        <td>8%</td>
+                        <td>20</td>
+                        <td>80</td>
+                        <td></td>
                     </tr>
                     
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>6</td>
+                        <td>청년2부</td>
+                        <td>100</td>
+                        <td>8%</td>
+                        <td>20</td>
+                        <td>80</td>
+                        <td></td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>7</td>
+                        <td colspan="4" class="filled">소개</td>
+                        <td class="filled">100</td>
+                        <td class="filled">8%</td>
+                        <td class="filled">20</td>
+                        <td class="filled">80</td>
+                        <td></td>
+                    </tr>
+                    
+               
 
             </table>
 
