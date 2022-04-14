@@ -1,12 +1,203 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>부서등록/수정</title>
+    <link href="departmentRegistration.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
+
+    <div class="wrap"> <!--전체 컨텐츠를 포괄하는 박스입니다-->
+
+        <div class="inner"><!--랩의 내부 사이즈를 규정하는 박스입니다.-->
+
+            <div class="top"><!--페이지 상단 타이틀과 유저프로필을 포괄하는 박스입니다. -->
+
+                <h1>부서등록/수정</h1><p class="subTitle">이곳에서 부서를 등록하고 수정할 수 있습니다.</p>
+
+                <div class="user-wrap">
+            
+                    <p class="userName">username-123</p>
+                    <div class="userProfile"><img src="../img/userProfile.svg"></div>
+                </div>
+
+            </div><!--top-->
+
+            <div class="contentsWrap"><!--컨텐츠 전체를 포괄하는 박스입니다.-->
+
+                <div class="folderBoxWrap"><!--폴더계층구조를 포괄하는 박스입니다.-->
+
+                    <div class="iconWrap"><!--상단 아이콘을 포괄하는 박스입니다-->
+
+                        <div class="folderIcon"><i class="fa-regular fa-folder-open"></i> 모두열기
+                        </div>
+                        <div class="folderIcon"><i class="fa-regular fa-folder-closed"></i> 모두닫기</div>
+                        <div class="folderIcon"><i class="fa-solid fa-folder-tree"></i> 부서추가</div>
+                    </div>
+
+                    <div class="directoryWrap">
+
+                        
+                        <ul class="tree">
+
+                                <li class="treeitem">
+
+                                    뉴웨이브 공동체
+
+                                <ul class="group">
+
+                                    <li class="treeitem">
+                                    총괄운영비
+                                    </li>
+
+                                    <li class="treeitem">
+                                    운영비A
+                                    </li>
+
+                                    <li class="treeitem">
+                                    운영비B
+                                    </li>
+
+                                </ul>
+
+                                </li>
+                                
+                                <li class="treeitem">
+
+                                    뉴웨이브 공동체
+
+                                <ul class="group">
+
+                                    <li class="treeitem">
+                                    총괄운영비
+                                    </li>
+
+                                    <li class="treeitem">
+                                    운영비A
+                                    </li>
+
+                                    <li class="treeitem">
+                                    운영비B
+                                    </li>
+
+                                </ul>
+
+                                </li>
+
+
+                                <li class="treeitem">
+
+                                    뉴웨이브 공동체
+
+                                <ul class="group">
+
+                                    <li class="treeitem">
+                                    총괄운영비
+                                    </li>
+
+                                    <li class="treeitem">
+                                    운영비A
+                                    </li>
+
+                                    <li class="treeitem">
+                                    운영비B
+                                    </li>
+
+                                </ul>
+
+                                </li>
+
+
+                                
+                        </ul>
+                        
+
+
+                    </div>
+
+                    <div class="bottomIconWrap"><!--하단 아이콘을 포괄하는 박스입니다-->
+
+                        <div class="folderIcon"><i class="fa-solid fa-angle-up"></i> 선택폴더위로</div>
+                        <div class="folderIcon"><i class="fa-solid fa-angle-down"></i> 선택폴더아래로</div>
+                        <div class="folderIcon saveIcon"><i class="fa-solid fa-floppy-disk"></i> 순서저장</div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="memberBoxWrap"><!--입력폼을 포괄하는 박스입니다.-->
+                   
+                    <div class="inputWrap">
+
+                        부서명 : &nbsp;<input class="inputForm" type="text" maxlength="10"><br>
+                        
+                
+                        팀장 : &nbsp;<input class="inputForm" type="text" maxlength="10"><br>
+                      
+
+                        총무 : &nbsp;<input class="inputForm" type="text" maxlength="10"><br>
+                            
+                        예산금액 : &nbsp;<input class="inputForm" type="text" maxlength="10"> 원<br>
+
+                        설명 : &nbsp;<input class="inputForm" type="text" maxlength="100" placeholder="설명을 입력해주세요"><br>
+                        
+                    
+                        <div class="submitBtn">
+                            회원등록
+                        </div>
+
+                    </div>
+
+                    <div class="bottomWrap"><!--하단 박스를 포괄하는 박스입니다-->
+
+                        <div class="contentsLeft"><!--왼쪽 박스-->
+                            <div class="contents">비등록회원</div>
+                        </div>
+
+                        <div class="contentsMiddle"><!--가운데 화살표를 포괄하는 박스입니다.-->
+                            
+                            <div class="leftArrow"></div>
+                            <div class="rightArrow"></div>
+                        </div>
+
+                        <div class="contentsRight"><!--오른쪽 박스-->
+                            <div class="contents">등록회원</div>
+                        </div>
+
+                    </div>
+
+                        <div class="memberIconWrap"><!--하단 아이콘을 포괄하는 박스입니다-->
+
+                            <div class="folderIcon"><i class="fa-solid fa-floppy-disk"></i> 저장</div>
+                            <div class="folderIcon"><i class="fa-solid fa-trash-can"></i> 삭제</div>
+                            <div class="folderIcon"><i class="fa-solid fa-person-circle-plus"></i> 하위사역추가</div>
+
+                        </div>
+
+
+
+                   
+  
+                </div>
+
+
+            </div>
+
+
+
+
+        </div><!--inner-->
+    </div><!--wrap-->
+
+
 </body>
 </html>
