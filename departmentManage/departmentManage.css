@@ -356,3 +356,15 @@ td{
 .pgNumber:hover a{
   color: white;
 }
+
+.link>a{
+  color: #333;
+  text-decoration: underline;
+
+}
+
+.link>a:hover{
+
+  cursor: pointer;
+
+}
