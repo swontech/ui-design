@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>부서등록/수정</title>
     <link href="departmentRegistration.css" rel="stylesheet">
+    <link rel="stylesheet" href="tree/css/fontello.css">
     <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
 
 </head>
@@ -43,83 +44,27 @@
 
                     <div class="directoryWrap">
 
-                        
                         <ul class="tree">
-
-                                <li class="mainList">
-                                    <a>
-                                    <i class="fa-solid fa-folder-closed"></i>뉴웨이브 공동체
-                                    </a>
-
-                                    <ul class="subList">
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>총괄운영비
-                                        </li>
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>운영비A
-                                        </li>
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>운영비B
-                                        </li>
-
+                            <li>
+                              <input type="checkbox" id="root">
+                              <label for="root">뉴웨이브공동체</label>
+                              <ul>
+                            
+                                <li>
+                                  <input type="checkbox" id="depth1">
+                                  <label for="depth1">총괄운영비</label>
+                                    <ul class="depth2">
+                                        <li>수련회비</li>
+                                        <li>선교비</li>
+                                        <li>청년1부</li>
                                     </ul>
-
                                 </li>
                                 
-                                <li class="mainList">
-
-                                    <i class="fa-solid fa-folder-closed"></i>뉴웨이브 공동체
-
-                                    <ul class="subList">
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>총괄운영비
-                                        </li>
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>운영비A
-                                        </li>
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>운영비B
-                                        </li>
-
-                                    </ul>
-
-                                </li>
-
-
-                                <li class="mainList">
-
-                                    <i class="fa-solid fa-folder-closed"></i>뉴웨이브 공동체
-
-                                    <ul class="subList">
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>총괄운영비
-                                        </li>
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>운영비A
-                                        </li>
-
-                                        <li class="listItem">
-                                        <i class="fa-solid fa-folder-closed"></i>운영비B
-                                        </li>
-
-                                    </ul>
-
-                                </li>
-
-
-                                
-                        </ul>
+                              </ul>
+                            </li>
+                          </ul>
+                         
                         
-
-
                     </div>
 
                     <div class="bottomIconWrap"><!--하단 아이콘을 포괄하는 박스입니다-->
@@ -138,40 +83,26 @@
                 <div class="memberBoxWrap"><!--입력폼을 포괄하는 박스입니다.-->
                    
                     <div class="inputWrap">
-
-                        부서명 : &nbsp;<input class="inputForm" type="text" maxlength="10"><br>
                         
-                
-                        팀장 : &nbsp;<input class="inputForm" type="text" maxlength="10"><br>
-                      
+                        <div class="inputInner">
 
-                        총무 : &nbsp;<input class="inputForm" type="text" maxlength="10"><br>
+                            <div class="inputTitle">부서명</div><input class="inputForm" type="text" maxlength="10"><br>
                             
-                        예산금액 : &nbsp;<input class="inputForm" type="text" maxlength="10"> 원<br>
+                    
+                            <div class="inputTitle">팀장</div><input class="inputForm" type="text" maxlength="10"><br>
+                        
 
-                        설명 : &nbsp;<input class="inputForm" type="text" maxlength="100" placeholder="설명을 입력해주세요"><br>
+                            <div class="inputTitle">총무</div><input class="inputForm" type="text" maxlength="10"><br>
+                                
+                            <div class="inputTitle">예산금액</div><input class="inputForm" type="text" maxlength="10"> <p class="won">원</p><br>
+
+                            <div class="inputTitle">설명</div><textarea class="textarea" placeholder="설명을 입력해주세요"></textarea>
+
+                        </div>
                         
                     
                         <div class="submitBtn">
                             회원등록
-                        </div>
-
-                    </div>
-
-                    <div class="bottomWrap"><!--하단 박스를 포괄하는 박스입니다-->
-
-                        <div class="contentsLeft"><!--왼쪽 박스-->
-                            <div class="contents">비등록회원</div>
-                        </div>
-
-                        <div class="contentsMiddle"><!--가운데 화살표를 포괄하는 박스입니다.-->
-                            
-                            <div class="leftArrow"></div>
-                            <div class="rightArrow"></div>
-                        </div>
-
-                        <div class="contentsRight"><!--오른쪽 박스-->
-                            <div class="contents">등록회원</div>
                         </div>
 
                     </div>

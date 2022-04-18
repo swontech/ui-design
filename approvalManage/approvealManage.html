@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>단체관리</title>
-    <link href="groupManage.css" rel="stylesheet">
+    <title>결재관리</title>
+    <link href="approvalManage.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
 
 </head>
@@ -35,7 +35,7 @@
                 <ul class="submenu">
                     <li><a href="">계수현황</a></li>
                     <li><a href="">헌금등록</a></li>
-                    <li><a href="../approvalManage/approvealManage.html">결제관리</a></li>
+                    <li><a href="">결제관리</a></li>
                     <li><a href="">결제상세처리</a></li>
                     <li><a href="../event/event.html">행사현황</a></li>
                 </ul>
@@ -55,12 +55,13 @@
     <!-----------------sidebar--------------------->
 
 
+
     <div class="wrap">
         <div class="inner">
 
             <div class="top">
 
-                <h1>단체관리</h1><p class="subTitle">이곳에서 새로 단체를 등록하거나 관리할 수 있습니다. </p>
+                <h1>결재관리</h1><p class="subTitle">이곳에서 결재 진행상태를 확인하고 관리할 수 있습니다. </p>
 
                 <div class="user-wrap">
             
@@ -72,82 +73,125 @@
 
 
             <div class="searchBox">
-                <input class="search" type="search" maxlength="20" placeholder="검색하기">
+                
+                <div class="dateSelectWrap">
+                        
+                    <input class="dateSelect" type="date" data-placeholder="등록일자" required aria-required="true"><p>~</p>
+                    <input class="dateSelect" type="date"  data-placeholder="등록일자" required aria-required="true">
+
+                </div>
+
+
+                <input class="search" type="search" maxlength="10" placeholder="제목"> &nbsp;&nbsp;
+                <input class="search" type="search" maxlength="10" placeholder="등록자">
+                <input class="search" type="search" maxlength="10" placeholder="결재자">
+                
+                <select type="select">
+                    <option>회원구분</option>
+                    <option>옵션1</option>
+                    <option>옵션2</option>
+                    <option>옵션3</option>
+                    <option>옵션4</option>
+                </select>
 
                 <div class="submitBtn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
+
             </div>
 
 
             <div class="iconWrap">
-                <a href="#" onclick="window.open('../groupRegistration/registration.html', '_blank', 'width=600 height=700,left=500px ,top=100px')">
+                <a href="#" onclick="window.open('../memberRegistration/memberRegistration.html', '_blank', 'width=600 height=600,left=500px ,top=100px')">
                 <div class="icons registIcon"><p>등록</p><img class="svg" src="../img/registIcon.svg">
                 </div></a>
                 <div class="icons editIcon"><p>수정</p><img class="svg" src="../img/editIcon.svg"></div>
                 <div class="icons deleteIcon"><p>삭제</p><img class="svg" src="../img/deleteIcon.svg"></div>
-                <div class="icons downloadIcon"><p>다운로드</p><img class="svg" src="../img/downloadIcon.svg"></div>
+             
             </div>
 
             <table>
                 <th>선택</th>
                 <th>번호</th>
-                <th>단체명</th>
-                <th>대표자</th>
-                <th>연락처</th>
-                <th>대표자 메일</th>
-                <th>회원수</th>
+                <th>등록일자</th>
+                <th>사용일자</th>
+                <th>부서명</th>
+                <th>등록자</th>
+                <th>결재자</th>
+                <th>진행상태</th>
+                <th>제목</th>
+                <th>사용금액</th>
                 
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>1</td>
-                        <td>A교회</td>
-                        <td>대표자A</td>
-                        <td>010-0000-0000</td>
-                        <td>qwerty123@naver.com</td>
-                        <td>100명</td>
+                        <td>2022.01.01</td>
+                        <td>2022.01.01</td>
+                        <td>부서명A</td>
+                        <td>등록자A</td>
+                        <td>결재자A</td>
+                        <td>결재요청</td>
+                        <td>부서식대</td>
+                        <td>50,000원</td>
                     </tr>
                     
+                
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>2</td>
-                        <td>B교회</td>
-                        <td>대표자B</td>
-                        <td>010-0000-0000</td>
-                        <td>qwerty123@naver.com</td>
-                        <td>100명</td>
+                        <td>2022.01.01</td>
+                        <td>2022.01.01</td>
+                        <td>부서명B</td>
+                        <td>등록자B</td>
+                        <td>결재자B</td>
+                        <td>결재요청</td>
+                        <td>부서식대</td>
+                        <td>50,000원</td>
                     </tr>
                     
+                
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>3</td>
-                        <td>C교회</td>
-                        <td>대표자C</td>
-                        <td>010-0000-0000</td>
-                        <td>qwerty123@naver.com</td>
-                        <td>100명</td>
+                        <td>2022.01.01</td>
+                        <td>2022.01.01</td>
+                        <td>부서명C</td>
+                        <td>등록자C</td>
+                        <td>결재자C</td>
+                        <td>결재요청</td>
+                        <td>부서식대</td>
+                        <td>50,000원</td>
                     </tr>
                     
+                
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>4</td>
-                        <td>D교회</td>
-                        <td>대표자D</td>
-                        <td>010-0000-0000</td>
-                        <td>qwerty123@naver.com</td>
-                        <td>100명</td>
+                        <td>2022.01.01</td>
+                        <td>2022.01.01</td>
+                        <td>부서명D</td>
+                        <td>등록자D</td>
+                        <td>결재자D</td>
+                        <td>결재요청</td>
+                        <td>부서식대</td>
+                        <td>50,000원</td>
                     </tr>
                     
+                
                     <tr>
                         <td><input class="checkbox" type="radio"></td>
                         <td>5</td>
-                        <td>E교회</td>
-                        <td>대표자E</td>
-                        <td>010-0000-0000</td>
-                        <td>qwerty123@naver.com</td>
-                        <td>100명</td>
+                        <td>2022.01.01</td>
+                        <td>2022.01.01</td>
+                        <td>부서명E</td>
+                        <td>등록자E</td>
+                        <td>결재자E</td>
+                        <td>결재요청</td>
+                        <td>부서식대</td>
+                        <td>50,000원</td>
                     </tr>
                     
+                  
 
             </table>
 
