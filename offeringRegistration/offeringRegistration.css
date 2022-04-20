@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+*{margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:"Apple SD Gothic Neo","NotoSansKR", "NanumMyeongjo" ;font-size:14px;color:#000;}
+img{vertical-align:middle;}
+li{list-style:none;}
+a{text-decoration:none;}
+.clearfix:after{content:"";display:block;clear:both;}
+body {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.wrap{
+    width: 80%;
+    margin: 50px auto;
+    
+}
+.inner {
+    width: 520px;
+}
+h1{
+    font-size: 41px;
+    font-weight: 200;
+}
+.subTitle{
+    font-size: 12px;
+    font-weight: 400;
+    color: #ababab;
+    
+
+}
+
+form{
+    margin-top: 50px;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #333 1.5px solid;
+    outline: none;
+    width: 150px;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    clear: right;
+   
+ 
+}
+
+select{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #333 1.5px solid;
+  outline: none;
+  width: 150px;
+  height: 22px;
+  font-size: 12px;
+  text-align: center;
+  color: #ababab;
+  margin-right: 10px;
+  margin-bottom: 10px;
+ 
+}
+
+.layer1Wrap{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.layer2Wrap{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.layer3Wrap{
+    display: flex;
+
+}
+
+.layer1-box1{
+    margin-right: 20px;
+}
+
+.layer2-box1{
+    margin-right: 20px;
+}
+
+.layer3-box1{
+    margin-right: 20px;
+}
+
+
+
+
+::placeholder{
+    text-align: center;
+}
+
+
+.submitBtn{
+    width: 110px;
+    height: 45px;
+    background: #32bea6;
+    border-radius: 50px;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.cancelBtn{
+    width: 110px;
+    height: 45px;
+    background: #a2a2a2;
+    border-radius: 50px;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.btnWrap{
+    display: flex;
+    margin-top: 30px;
+}
+.submitBtn{
+    margin-right: 20px;
+}
+
+.submitBtn:hover{
+
+    cursor: pointer;
+    background-color: #24ac91;
+
+}
+
+.submitBtn:active{
+    background-color: rgb(25, 128, 111);
+}
+
+.cancelBtn:hover{
+
+    cursor: pointer;
+    background-color: #b1b1b1;
+}
+
+.cancelBtn:active{
+    background-color: #747474;
+}
