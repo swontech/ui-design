@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './greenBtn.dart';
 import './iconcamera.dart';
 import './iconimage.dart';
 import './iconfile.dart';
@@ -134,6 +133,13 @@ class AuthorityInfo extends StatelessWidget {
               softWrap: false,
             ),
           ),
+          Container(
+            decoration: BoxDecoration(
+              color: const Color(0xff00878d),
+              borderRadius: BorderRadius.circular(41.0),
+            ),
+            margin: EdgeInsets.fromLTRB(30.0, 528.0, 30.0, 31.0),
+          ),
           Pinned.fromPins(
             Pin(startFraction: 0.1139, endFraction: 0.34),
             Pin(startFraction: 0.1359, endFraction: 0.7969),
@@ -167,32 +173,22 @@ class AuthorityInfo extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(start: 30.3, end: 30.3),
-            Pin(end: 31.5, startFraction: 0.8242),
+            Pin(start: 143.9, end: 143.1),
+            Pin(end: 47.0, startFraction: 0.85),
             child: Stack(
               children: <Widget>[
-                Pinned.fromPins(
-                  Pin(startFraction: 0.0, endFraction: 0.0),
-                  Pin(size: 81.0, middle: 0.5),
-                  child: greenBtn(),
-                ),
-                Center(
-                  child: SizedBox(
-                    width: 73.0,
-                    height: 49.0,
+                SizedBox.expand(
                     child: Text(
-                      '확인',
-                      style: TextStyle(
-                        fontFamily: 'Apple SD Gothic Neo',
-                        fontSize: 41,
-                        color: const Color(0xffffffff),
-                        letterSpacing: 1.845,
-                        fontWeight: FontWeight.w700,
-                      ),
-                      softWrap: false,
-                    ),
+                  '확인',
+                  style: TextStyle(
+                    fontFamily: 'Apple SD Gothic Neo',
+                    fontSize: 41,
+                    color: const Color(0xffffffff),
+                    letterSpacing: 1.845,
+                    fontWeight: FontWeight.w700,
                   ),
-                ),
+                  softWrap: false,
+                )),
               ],
             ),
           ),

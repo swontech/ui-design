@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './greenBtn.dart';
+import './confirmBtn.dart';
 import './AdmitAllBtn.dart';
 import './notCheckBtn.dart';
 import './checkedBtn.dart';
@@ -47,6 +47,11 @@ class admitCheck extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
+            Pin(start: 30.0, end: 30.0),
+            Pin(size: 81.0, end: 31.0),
+            child: confirmBtn(),
+          ),
+          Pinned.fromPins(
             Pin(startFraction: 0.2222, endFraction: 0.3028),
             Pin(startFraction: 0.5859, endFraction: 0.3766),
             child: Text(
@@ -75,32 +80,22 @@ class admitCheck extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(start: 30.3, end: 30.3),
-            Pin(end: 31.0, startFraction: 0.825),
+            Pin(start: 143.9, end: 143.1),
+            Pin(end: 47.0, startFraction: 0.85),
             child: Stack(
               children: <Widget>[
-                Pinned.fromPins(
-                  Pin(startFraction: 0.0, endFraction: 0.0),
-                  Pin(startFraction: 0.0, endFraction: 0.0),
-                  child: greenBtn(),
-                ),
-                Center(
-                  child: SizedBox(
-                    width: 73.0,
-                    height: 49.0,
+                SizedBox.expand(
                     child: Text(
-                      '확인',
-                      style: TextStyle(
-                        fontFamily: 'Apple SD Gothic Neo',
-                        fontSize: 41,
-                        color: const Color(0xffffffff),
-                        letterSpacing: 1.845,
-                        fontWeight: FontWeight.w700,
-                      ),
-                      softWrap: false,
-                    ),
+                  '확인',
+                  style: TextStyle(
+                    fontFamily: 'Apple SD Gothic Neo',
+                    fontSize: 41,
+                    color: const Color(0xffffffff),
+                    letterSpacing: 1.845,
+                    fontWeight: FontWeight.w700,
                   ),
-                ),
+                  softWrap: false,
+                )),
               ],
             ),
           ),

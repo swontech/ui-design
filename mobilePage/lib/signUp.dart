@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './iconclose.dart';
 import './iconnext.dart';
+import './iconclose.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class signUp extends StatelessWidget {
@@ -164,11 +164,6 @@ class signUp extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 27.0, start: 19.0),
-            Pin(size: 27.0, start: 37.0),
-            child: iconclose(),
-          ),
-          Pinned.fromPins(
             Pin(size: 120.0, end: 46.0),
             Pin(size: 45.0, end: 33.0),
             child: Stack(
@@ -238,6 +233,10 @@ class signUp extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(19.0, 37.0, 314.0, 576.0),
+            child: iconclose(),
           ),
         ],
       ),

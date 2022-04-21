@@ -32,28 +32,28 @@ class costForm extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(startFraction: 0.0972, endFraction: 0.4778),
-            Pin(startFraction: 0.1534, endFraction: 0.7638),
+            Pin(startFraction: 0.0972, endFraction: 0.5528),
+            Pin(startFraction: 0.1659, endFraction: 0.7669),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(
                   Pin(startFraction: 0.0, endFraction: 0.0),
-                  Pin(startFraction: 0.5058, endFraction: 0.0603),
+                  Pin(startFraction: 0.5071, endFraction: 0.0278),
                   child: Container(
                     color: const Color(0xf4fcf200),
                   ),
                 ),
                 Pinned.fromPins(
-                  Pin(startFraction: 0.0065, endFraction: 0.0),
+                  Pin(startFraction: 0.0079, endFraction: 0.0),
                   Pin(startFraction: 0.0, endFraction: 0.0),
                   child: Text(
                     '비용작성',
                     style: TextStyle(
                       fontFamily: 'Apple SD Gothic Neo',
-                      fontSize: 44,
+                      fontSize: 36,
                       color: const Color(0xff1d1d1d),
                       fontWeight: FontWeight.w700,
-                      height: 1.1818181818181819,
+                      height: 1.4444444444444444,
                     ),
                     textHeightBehavior:
                         TextHeightBehavior(applyHeightToFirstAscent: false),
@@ -330,14 +330,14 @@ class costForm extends StatelessWidget {
                         Pin(startFraction: 0.9222, endFraction: 0.0778),
                         child: Stack(
                           children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, -1.0),
-                              child: SizedBox.expand(
-                                  child: SvgPicture.string(
+                            Pinned.fromPins(
+                              Pin(startFraction: 0.0, endFraction: 0.0),
+                              Pin(startFraction: NaN, endFraction: -Infinity),
+                              child: SvgPicture.string(
                                 _svg_dvw9s2,
                                 allowDrawingOutsideViewBox: true,
                                 fit: BoxFit.fill,
-                              )),
+                              ),
                             ),
                           ],
                         ),
