@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import './iconhand.dart';
+import './icondocuments.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class qrcode extends StatelessWidget {
@@ -51,7 +53,6 @@ class qrcode extends StatelessWidget {
               ),
             ),
           ),
-          Container(),
           Pinned.fromPins(
             Pin(start: 0.0, end: 0.0),
             Pin(size: 100.0, end: 0.0),
@@ -81,14 +82,7 @@ class qrcode extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(start: 1.0, end: 0.1),
                   Pin(size: 47.0, start: 0.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: const AssetImage(''),
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                  ),
+                  child: iconhand(),
                 ),
               ],
             ),
@@ -115,14 +109,7 @@ class qrcode extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(start: 1.0, end: 0.0),
                   Pin(size: 47.0, start: 0.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: const AssetImage(''),
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                  ),
+                  child: icondocuments(),
                 ),
               ],
             ),
@@ -511,7 +498,8 @@ class qrcode extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: const AssetImage(''),
+                                    image: const AssetImage(
+                                        'assets/images/randomQrImage.png'),
                                     fit: BoxFit.fill,
                                   ),
                                 ),
@@ -586,12 +574,12 @@ class qrcode extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(startFraction: 0.3177, endFraction: 0.3156),
-            Pin(startFraction: 0.5085, endFraction: 0.3138),
+            Pin(startFraction: 0.5073, endFraction: 0.3138),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(
                   Pin(startFraction: 0.2652, endFraction: 0.2652),
-                  Pin(startFraction: 0.504, endFraction: 0.241),
+                  Pin(startFraction: 0.5073, endFraction: 0.2394),
                   child: Text(
                     '김철수',
                     style: TextStyle(
@@ -606,7 +594,7 @@ class qrcode extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(startFraction: 0.0, endFraction: 0.0),
-                  Pin(startFraction: 0.8329, endFraction: 0.0),
+                  Pin(startFraction: 0.834, endFraction: 0.0),
                   child: Text(
                     '엘리트그룹 소속 팀장',
                     style: TextStyle(
@@ -622,22 +610,22 @@ class qrcode extends StatelessWidget {
                 Align(
                   alignment: Alignment.topCenter,
                   child: SizedBox(
-                    width: 43.0,
-                    height: 43.0,
+                    width: 45.0,
+                    height: 45.0,
                     child: Stack(
                       children: <Widget>[
                         Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: const AssetImage(''),
+                              image: const AssetImage(
+                                  'assets/images/randomUserProfil.png'),
                               fit: BoxFit.fill,
                             ),
                           ),
-                          margin: EdgeInsets.fromLTRB(-1.5, -0.7, -0.7, -1.5),
                         ),
                         Pinned.fromPins(
-                          Pin(startFraction: 0.0, endFraction: 0.0),
-                          Pin(startFraction: 0.0, endFraction: 0.0),
+                          Pin(startFraction: 0.0333, endFraction: 0.0167),
+                          Pin(startFraction: 0.0167, endFraction: 0.0333),
                           child: Container(
                             decoration: BoxDecoration(
                               color: const Color(0xff32bea6),
@@ -648,6 +636,23 @@ class qrcode extends StatelessWidget {
                         ),
                       ],
                     ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Pinned.fromPins(
+            Pin(size: 27.0, start: 19.0),
+            Pin(size: 27.0, start: 37.0),
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: const AssetImage(''),
+                      fit: BoxFit.fill,
+                    ),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                 ),
               ],
