@@ -15,8 +15,8 @@ class signUp extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Pinned.fromPins(
-            Pin(startFraction: 0.1083, endFraction: 0.5111),
-            Pin(startFraction: 0.1438, endFraction: 0.7891),
+            Pin(startFraction: 0.0917, endFraction: 0.5278),
+            Pin(startFraction: 0.1547, endFraction: 0.7781),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(

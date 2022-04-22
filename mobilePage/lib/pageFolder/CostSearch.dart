@@ -3,7 +3,6 @@ import 'package:adobe_xd/pinned.dart';
 import './iconcalendar.dart';
 import './reverseTriangle.dart';
 import './searchBtn.dart';
-import './iconapprove.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CostSearch extends StatelessWidget {
@@ -825,9 +824,21 @@ class CostSearch extends StatelessWidget {
               child: searchBtn(),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.fromLTRB(48.0, 325.0, 292.0, 295.0),
-            child: iconapprove(),
+          Pinned.fromPins(
+            Pin(size: 20.0, start: 48.0),
+            Pin(size: 20.0, middle: 0.5242),
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: const AssetImage(''),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

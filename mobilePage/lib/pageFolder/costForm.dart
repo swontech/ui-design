@@ -32,8 +32,8 @@ class costForm extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(startFraction: 0.0972, endFraction: 0.5528),
-            Pin(startFraction: 0.1659, endFraction: 0.7669),
+            Pin(startFraction: 0.0917, endFraction: 0.5583),
+            Pin(startFraction: 0.155, endFraction: 0.7778),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(
@@ -317,71 +317,63 @@ class costForm extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(startFraction: 0.0972, endFraction: 0.0981),
-            Pin(startFraction: 0.575, endFraction: 0.3897),
+            Pin(startFraction: 0.5775, endFraction: 0.3897),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(
-                  Pin(startFraction: 0.0, endFraction: 0.0),
-                  Pin(startFraction: 0.0701, endFraction: 0.0),
+                  Pin(startFraction: 0.2986, endFraction: 0.0),
+                  Pin(startFraction: 0.9222, endFraction: 0.0778),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
-                        Pin(startFraction: 0.2986, endFraction: 0.0),
-                        Pin(startFraction: 0.9222, endFraction: 0.0778),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(startFraction: 0.0, endFraction: 0.0),
-                              Pin(startFraction: NaN, endFraction: -Infinity),
-                              child: SvgPicture.string(
-                                _svg_dvw9s2,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(startFraction: 0.0, endFraction: 0.786),
                         Pin(startFraction: 0.0, endFraction: 0.0),
-                        child: Stack(
-                          children: <Widget>[
-                            Stack(
-                              children: <Widget>[
-                                Stack(
-                                  children: <Widget>[
-                                    Pinned.fromPins(
-                                      Pin(startFraction: 0.0, endFraction: 0.0),
-                                      Pin(startFraction: 0.0, endFraction: 0.0),
-                                      child: Text(
-                                        '첨부파일',
-                                        style: TextStyle(
-                                          fontFamily: 'Apple SD Gothic Neo',
-                                          fontSize: 18,
-                                          color: const Color(0xff1d1d1d),
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                        softWrap: false,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ],
+                        Pin(startFraction: NaN, endFraction: -Infinity),
+                        child: SvgPicture.string(
+                          _svg_dvw9s2,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
                         ),
                       ),
                     ],
                   ),
                 ),
                 Pinned.fromPins(
-                  Pin(size: 15.0, end: 0.7),
-                  Pin(size: 15.0, start: 0.0),
-                  child: addBtn(),
+                  Pin(startFraction: 0.0, endFraction: 0.786),
+                  Pin(startFraction: 0.0, endFraction: 0.0),
+                  child: Stack(
+                    children: <Widget>[
+                      Stack(
+                        children: <Widget>[
+                          Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(startFraction: 0.0, endFraction: 0.0),
+                                Pin(startFraction: 0.0, endFraction: 0.0),
+                                child: Text(
+                                  '첨부파일',
+                                  style: TextStyle(
+                                    fontFamily: 'Apple SD Gothic Neo',
+                                    fontSize: 18,
+                                    color: const Color(0xff1d1d1d),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
+          ),
+          Pinned.fromPins(
+            Pin(startFraction: 0.8583, endFraction: 0.1),
+            Pin(startFraction: 0.575, endFraction: 0.4016),
+            child: addBtn(),
           ),
           Pinned.fromPins(
             Pin(startFraction: 0.0972, endFraction: 0.0972),

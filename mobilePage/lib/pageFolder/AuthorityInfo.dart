@@ -119,8 +119,8 @@ class AuthorityInfo extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(startFraction: 0.1111, endFraction: 0.4639),
-            Pin(startFraction: 0.2297, endFraction: 0.7203),
+            Pin(startFraction: 0.1056, endFraction: 0.4694),
+            Pin(startFraction: 0.2313, endFraction: 0.7188),
             child: Text(
               '안전한 서비스 이용을 위해\n아래의 권한을 허용해 주세요',
               style: TextStyle(
@@ -141,8 +141,8 @@ class AuthorityInfo extends StatelessWidget {
             margin: EdgeInsets.fromLTRB(30.0, 528.0, 30.0, 31.0),
           ),
           Pinned.fromPins(
-            Pin(startFraction: 0.1139, endFraction: 0.34),
-            Pin(startFraction: 0.1359, endFraction: 0.7969),
+            Pin(startFraction: 0.0917, endFraction: 0.3622),
+            Pin(startFraction: 0.1547, endFraction: 0.7781),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(
