@@ -4,8 +4,8 @@ import './iconclosewhite.dart';
 import './iconcameraChange.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class QrScan extends StatelessWidget {
-  QrScan({
+class qrScan extends StatelessWidget {
+  qrScan({
     Key key,
   }) : super(key: key);
   @override
@@ -15,41 +15,63 @@ class QrScan extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Pinned.fromPins(
-            Pin(startFraction: 0.1541, endFraction: 0.1541),
-            Pin(startFraction: 0.2029, endFraction: 0.4142),
-            child: Container(
-              decoration: BoxDecoration(
-                color: const Color(0x4dffffff),
-                borderRadius: BorderRadius.circular(46.0),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(startFraction: 0.1611, endFraction: 0.1694),
-            Pin(startFraction: 0.6433, endFraction: 0.313),
-            child: Text(
-              'QR코드를 스캔 시켜주세요',
-              style: TextStyle(
-                fontFamily: 'Apple SD Gothic Neo',
-                fontSize: 23,
-                color: const Color(0xffffffff),
-                fontWeight: FontWeight.w600,
-              ),
-              softWrap: false,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(startFraction: 0.2417, endFraction: 0.2417),
-            Pin(startFraction: 0.6969, endFraction: 0.2766),
-            child: Text(
-              'QR코드가 영역 안에 위치시키세요',
-              style: TextStyle(
-                fontFamily: 'Apple SD Gothic Neo',
-                fontSize: 14,
-                color: const Color(0xffbcbcbc),
-                fontWeight: FontWeight.w200,
-              ),
-              softWrap: false,
+            Pin(size: 249.1, middle: 0.4958),
+            Pin(startFraction: 0.1998, endFraction: 0.2797),
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(startFraction: 0.0, endFraction: 0.0),
+                  Pin(startFraction: 0.0, endFraction: 0.2645),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0x4dffffff),
+                      borderRadius: BorderRadius.circular(46.0),
+                    ),
+                  ),
+                ),
+                Pinned.fromPins(
+                  Pin(startFraction: 0.0182, endFraction: 0.0182),
+                  Pin(size: 51.3, middle: 1.0),
+                  child: Stack(
+                    children: <Widget>[
+                      Stack(
+                        children: <Widget>[
+                          Pinned.fromPins(
+                            Pin(startFraction: 0.0, endFraction: 0.0),
+                            Pin(startFraction: 0.0, endFraction: 0.4543),
+                            child: Text(
+                              'QR코드를 스캔 시켜주세요',
+                              style: TextStyle(
+                                fontFamily: 'Apple SD Gothic Neo',
+                                fontSize: 23,
+                                color: const Color(0xffffffff),
+                                fontWeight: FontWeight.w600,
+                              ),
+                              textAlign: TextAlign.center,
+                              softWrap: false,
+                            ),
+                          ),
+                          Pinned.fromPins(
+                            Pin(startFraction: 0.1125, endFraction: 0.1125),
+                            Pin(startFraction: 0.6687, endFraction: 0.0),
+                            child: Text(
+                              'QR코드가 영역 안에 위치시키세요',
+                              style: TextStyle(
+                                fontFamily: 'Apple SD Gothic Neo',
+                                fontSize: 14,
+                                color: const Color(0xffbcbcbc),
+                                fontWeight: FontWeight.w200,
+                              ),
+                              textAlign: TextAlign.center,
+                              softWrap: false,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ),
           Pinned.fromPins(
