@@ -131,31 +131,39 @@ class signUp extends StatelessWidget {
           Pinned.fromPins(
             Pin(startFraction: 0.0833, endFraction: 0.0833),
             Pin(startFraction: 0.825, endFraction: 0.0484),
-            child: Container(
-              decoration: BoxDecoration(
-                color: const Color(0xff00878d),
-                borderRadius: BorderRadius.circular(41.0),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(startFraction: 0.3472, endFraction: 0.3472),
-            Pin(startFraction: 0.85, endFraction: 0.0734),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(
                   Pin(startFraction: 0.0, endFraction: 0.0),
                   Pin(startFraction: 0.0, endFraction: 0.0),
-                  child: Text(
-                    '로그인',
-                    style: TextStyle(
-                      fontFamily: 'Apple SD Gothic Neo',
-                      fontSize: 41,
-                      color: const Color(0xffffffff),
-                      letterSpacing: 1.845,
-                      fontWeight: FontWeight.w700,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0xff00878d),
+                      borderRadius: BorderRadius.circular(41.0),
                     ),
-                    softWrap: false,
+                  ),
+                ),
+                Pinned.fromPins(
+                  Pin(startFraction: 0.3167, endFraction: 0.3167),
+                  Pin(startFraction: 0.2222, endFraction: 0.1728),
+                  child: Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(startFraction: 0.0, endFraction: 0.0),
+                        Pin(startFraction: 0.0, endFraction: 0.0),
+                        child: Text(
+                          '로그인',
+                          style: TextStyle(
+                            fontFamily: 'Apple SD Gothic Neo',
+                            fontSize: 41,
+                            color: const Color(0xffffffff),
+                            letterSpacing: 1.845,
+                            fontWeight: FontWeight.w700,
+                          ),
+                          softWrap: false,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
