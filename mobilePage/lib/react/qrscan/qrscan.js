@@ -72,7 +72,7 @@ export default class Qrscan extends Component {
             <ReactImage data-layer="14a7451c-3120-45cc-ace7-5ffcbafc3d52" source={require('./assets/x8.png')} style={styles.qrscan_x145_x8} />
             <View data-layer="c3c40b39-8c21-4ffb-b343-5f19b3581f6e" style={styles.qrscan_x145_x144}>
                 <View data-layer="9d8c68e7-fd16-475a-854e-7c08e5ffdb3b" style={styles.qrscan_x145_x144_x146}>
-                    <Text data-layer="0f36aec7-21a0-47d0-b656-b6232e2c5ec0" style={styles.qrscan_x145_x144_x146_qr0d071759}>QR코드를 스캔 시켜주세요</Text>
+                    <Text data-layer="0f36aec7-21a0-47d0-b656-b6232e2c5ec0" style={styles.qrscan_x145_x144_x146_qr212facd6}>QR코드를 스캔 시켜주세요</Text>
                     <Text data-layer="b2d6896f-4cec-4c48-8729-bdf17e782506" style={styles.qrscan_x145_x144_x146_qr}>QR코드가 영역 안에 위치시키세요</Text>
                 </View>
             </View>
@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
     "left": 0,
     "top": 0
   },
-  "qrscan_x145_x144_x146_qr0d071759": {
+  "qrscan_x145_x144_x146_qr212facd6": {
     "opacity": 1,
     "position": "absolute",
     "backgroundColor": "rgba(255, 255, 255, 0)",
