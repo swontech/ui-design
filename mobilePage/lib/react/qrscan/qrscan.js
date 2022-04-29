@@ -72,7 +72,7 @@ export default class Qrscan extends Component {
             <ReactImage data-layer="14a7451c-3120-45cc-ace7-5ffcbafc3d52" source={require('./assets/x8.png')} style={styles.qrscan_x145_x8} />
             <View data-layer="c3c40b39-8c21-4ffb-b343-5f19b3581f6e" style={styles.qrscan_x145_x144}>
                 <View data-layer="9d8c68e7-fd16-475a-854e-7c08e5ffdb3b" style={styles.qrscan_x145_x144_x146}>
-                    <Text data-layer="0f36aec7-21a0-47d0-b656-b6232e2c5ec0" style={styles.qrscan_x145_x144_x146_qr212facd6}>QR코드를 스캔 시켜주세요</Text>
+                    <Text data-layer="0f36aec7-21a0-47d0-b656-b6232e2c5ec0" style={styles.qrscan_x145_x144_x146_qr0ff1731c}>QR코드를 스캔 시켜주세요</Text>
                     <Text data-layer="b2d6896f-4cec-4c48-8729-bdf17e782506" style={styles.qrscan_x145_x144_x146_qr}>QR코드가 영역 안에 위치시키세요</Text>
                 </View>
             </View>
@@ -87,6 +87,10 @@ export default class Qrscan extends Component {
         <View data-layer="b0ddd424-1e4f-4a89-8505-7750b8299e74" style={styles.qrscan_iconCamerachange}>
             <ReactImage data-layer="dd3848b7-d8db-4392-a319-b5d8172cbb38" source={require('./assets/sync.png')} style={styles.qrscan_iconCamerachange_sync} />
         </View>
+        <View data-layer="444a45e1-cce6-4c92-ae33-470a04891c80" style={styles.qrscan_iconSearchWhite}>
+            <ReactImage data-layer="029939a7-5725-46d6-a3b1-132824915f6e" source={require('./assets/magnifyingGlass.png')} style={styles.qrscan_iconSearchWhite_magnifyingGlass} />
+        </View>
+        <Text data-layer="feafee73-0069-426a-b34d-2c02be7a94d2" style={styles.qrscan_xb1483f09}>행사선택</Text>
     </ScrollView>
     );
   }
@@ -186,7 +190,7 @@ const styles = StyleSheet.create({
     "left": 0,
     "top": 0
   },
-  "qrscan_x145_x144_x146_qr212facd6": {
+  "qrscan_x145_x144_x146_qr0ff1731c": {
     "opacity": 1,
     "position": "absolute",
     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -346,5 +350,63 @@ const styles = StyleSheet.create({
     "height": 37,
     "left": 0,
     "top": 0
+  },
+  "qrscan_iconSearchWhite": {
+    "opacity": 1,
+    "position": "absolute",
+    "backgroundColor": "transparent",
+    "marginTop": 0,
+    "marginRight": 0,
+    "marginBottom": 0,
+    "marginLeft": 0,
+    "paddingTop": 0,
+    "paddingRight": 0,
+    "paddingBottom": 0,
+    "paddingLeft": 0,
+    "width": 38,
+    "height": 38,
+    "left": 303,
+    "top": 32
+  },
+  "qrscan_iconSearchWhite_magnifyingGlass": {
+    "opacity": 1,
+    "position": "absolute",
+    "marginTop": 0,
+    "marginRight": 0,
+    "marginBottom": 0,
+    "marginLeft": 0,
+    "borderTopLeftRadius": 0,
+    "borderTopRightRadius": 0,
+    "borderBottomLeftRadius": 0,
+    "borderBottomRightRadius": 0,
+    "width": "auto",
+    "height": "auto",
+    "left": 0,
+    "top": 0,
+    "right": 0,
+    "bottom": 0
+  },
+  "qrscan_xb1483f09": {
+    "opacity": 1,
+    "position": "absolute",
+    "backgroundColor": "rgba(255, 255, 255, 0)",
+    "color": "rgba(255, 255, 255, 1)",
+    "fontSize": 10,
+    "fontWeight": "700",
+    "fontStyle": "normal",
+    "fontFamily": "Apple SD Gothic Neo",
+    "textAlign": "center",
+    "marginTop": 0,
+    "marginRight": 0,
+    "marginBottom": 0,
+    "marginLeft": 0,
+    "paddingTop": 0,
+    "paddingRight": 0,
+    "paddingBottom": 0,
+    "paddingLeft": 0,
+    "width": 34,
+    "height": 12,
+    "left": 305,
+    "top": 70
   }
 });
