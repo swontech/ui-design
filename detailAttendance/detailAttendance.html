@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행사현황</title>
+    <link href="detailAttendance.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/444ef3636e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    
+    <div class="sidebar">
+        
+        <div class="logo"><img src="../img/sub-logo.svg" alt="로고"></div>
+
+        <ul class="menu-wrap">
+
+            <li class="menu"><a href="../welcomePage/welcomePage.html"><i class="fa-solid fa-house-chimney"></i> &nbsp;메인으로 </a>
+              
+            </li>
+
+    
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp;기준관리</a>
+                <ul class="submenu">
+                    <li><a href="../groupManage/groupManage.html">단체관리</a></li>
+                    <li><a href="../memberManage/memberManage.html">회원관리</a></li>
+                    <li><a href="../departmentManage/departmentManage.html">부서관리</a></li>
+                    <li><a href="">결제관리</a></li>
+                </ul>
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp;진행관리</a>
+                <ul class="submenu">
+                    <li><a href="">계수현황</a></li>
+                    <li><a href="">헌금등록</a></li>
+                    <li><a href="../approvalManage/approvealManage.html">결제관리</a></li>
+                    <li><a href="">결제상세처리</a></li>
+                    <li><a href="../event/event.html">행사현황</a></li>
+                </ul>
+            
+            </li>
+            <li class="menu"><a href=""><i class="fa-solid fa-book"></i> &nbsp;실적관리</a>
+                <ul class="submenu">
+                    <li><a href="">계수실적관리</a></li>
+                    <li><a href="">비용실적관리</a></li>
+                </ul>
+            
+            </li>
+        </ul>
+
+    </div>
+    
+    <!-----------------sidebar--------------------->
+
+    
+    <div class="wrap"> <!--전체 컨텐츠를 포괄하는 박스입니다-->
+
+        <div class="inner"><!--랩의 내부 사이즈를 규정하는 박스입니다.-->
+
+            <div class="top"><!--페이지 상단 타이틀과 유저프로필을 포괄하는 박스입니다. -->
+
+                <h1>행사명 : XXX</h1><p class="subTitle">이곳에서 행사들을 관리하고 현황을 볼 수 있습니다.</p>
+
+                <div class="user-wrap">
+            
+                    <p class="userName">username-123</p>
+                    <div class="userProfile"><img src="../img/userProfile.svg"></div>
+                </div>
+
+            </div><!--top-->
+
+
+            <div class="searchBox"><!--검색창을 포괄하는 박스입니다.-->
+                <input class="search" type="search" maxlength="10" placeholder="성명">
+                <input class="search" type="search" maxlength="10" placeholder="전화번호">
+                
+                <select type="select">
+                    <option>참석여부</option>
+                    <option>Y</option>
+                    <option>N</option>
+                </select>
+
+                <div class="submitBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+  
+            </div>
+
+
+            <div class="iconWrap"><!--검색창 밑 아이콘을 포괄하는 박스입니다.-->
+                <a href="#" onclick="window.open('../eventManage/eventManage.html', '_blank', 'width=500 height=600,left=500px ,top=100px')">
+                <div class="icons costIcon"><p>출석등록</p><img class="svg" src="../img/registIcon.svg">
+                </div></a>
+                <div class="icons costIcon"><p>출석취소</p><img class="svg" src="../img/costIcon.svg"></div>
+            </div>
+
+            
+
+            <table>
+                <th>선택</th>
+                <th>번호</th>
+                <th>성명</th>
+                <th>전화번호</th>
+                <th>참여일시</th>
+                <th>참석여부</th>
+                
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>1</td>
+                        <td>운영자A</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>Y</td>
+                        
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>2</td>
+                        <td>운영자B</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>Y</td>
+                        
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>3</td>
+                        <td>운영자C</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>Y</td>
+                        
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>4</td>
+                        <td>운영자D</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>Y</td>
+                        
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td><input class="checkbox" type="radio"></td>
+                        <td>5</td>
+                        <td>운영자E</td>
+                        <td>010-0000-0000</td>
+                        <td>2022.01.01 ~ 2022. 02.01</td>
+                        <td>Y</td>
+                        
+                        
+                    </tr>
+                    
+
+            </table>
+
+
+            <div class="pagination"><!--페이지 우측하단 페이지네이션을 포괄하는 박스입니다.-->
+                <div><i class="fa-solid fa-angle-left"></i></div>
+                <div class="pgNumber"><a href="">1</a></div>
+                <div class="pgNumber"><a href="">2</a></div>
+                <div class="pgNumber"><a href="">3</a></div>
+                <div class="pgNumber"><a href="">4</a></div>
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+                <div class="pgNumber"><a href="">10</a></div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+
+
+
+
+
+
+
+            
+        </div><!--inner-->
+    </div><!--wrap-->
+
+
+</body>
+</html>
