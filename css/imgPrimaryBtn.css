@@ -1,0 +1,54 @@
+
+/*원형의 기능버튼입니다*/
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1.5px solid #333;
+    margin-right: 10px;
+    color: #333;
+    font-size: 12px;
+    position: relative;
+    
+  }
+
+  /*기능버튼의 텍스트 입니다*/
+  .icons>p{
+  
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    
+  }
+  
+  /*기능버튼의 이미지 css입니다*/
+
+  .icons>img{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    margin-left: -10px;
+  
+  }
+  
+
+  /*버튼 호버 css입니다 */
+  .icons:hover{
+    border: rgb(50, 190, 166) 1.5px solid;
+    background-color: rgb(50, 190, 166);
+    color: white;
+  }
+  
+  .icons:hover .svg{
+    filter: invert(99%) sepia(6%) saturate(377%) hue-rotate(64deg) brightness(116%) contrast(100%);
+  }
+  
+  /*버튼 액티브 css 입니다*/
+  .icons:active{
+    background-color: rgb(25, 128, 111);
+    border: 1px solid rgb(25, 128, 111);
+  }
+  

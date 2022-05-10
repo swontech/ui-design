@@ -1,0 +1,24 @@
+
+/*돋보기 모양의 검색 버튼입니다.*/
+
+.imgSecondaryBtn{
+
+    display: inline-block;
+    background-color: rgb(50, 190, 166);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+
+}
+
+/*마우스 호버시 색상변환*/
+
+
+.imgSecondaryBtn:hover{
+    background-color:  rgb(25, 128, 111);
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+
+/*취소 버튼 입니다*/
+
+.cancelBtn {
+    width: 110px;
+    height: 45px;
+    background: #a2a2a2;
+    border-radius: 50px;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+    font-size: 22px;
+}
