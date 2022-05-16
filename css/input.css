@@ -1,0 +1,14 @@
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #333 1.5px solid;
+    outline: none;
+    width: 10%;
+    height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #ababab;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

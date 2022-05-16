@@ -1,0 +1,12 @@
+pagination {
+    float: right;
+    margin-top: 50px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 21px;
+    font-weight: 200;
+    right: 0;
+    bottom: 0;
+}
